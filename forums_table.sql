@@ -1,0 +1,7 @@
+CREATE TABLE forums
+(
+fname VARCHAR(50) NOT NULL,
+post_id MEDIUMINT(6) UNSIGNED AUTO_INCREMENT,
+PRIMARY KEY (fname),
+FOREIGN KEY (post_id) REFERENCES posts(post_id)
+);
